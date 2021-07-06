@@ -4,10 +4,10 @@ Clássico jogo da cobrinha (bem simples) em JavaScript.
 
 
 ## Rodando localmente 1
-Por ser feito em Javascript, você pode rodar o jogo abrindo o arquivo [_views/pages/jogo.html_](views/pages/jogo.html) com o seu navegador.
+Você pode rodar o jogo abrindo o arquivo [_views/pages/jogo.html_](views/pages/jogo.html) com o seu navegador.
 
 ```sh
-$ git clone https://github.com/ifal-riolargo/snake-game-js.git # ou clone do seu próprio fork
+$ git clone https://github.com/ifal-riolargo/snake-game-js.git # clone a aplicação para sua máquina local (ou faça antes um fork e clone do seu próprio repositório)
 $ cd snake-game-js
 $ firefox views/pages/jogo.html # ou use outro navegador ex. google-chrome 
 ```
@@ -37,7 +37,7 @@ Agora execute.
 $ node --version # verificar versão do node
 $ npm --version # verificar versão do NPM
 $ git --version # verificar versão do GIT
-$ git clone https://github.com/heroku/node-js-getting-started.git #clone a aplicação para sua máquina local (ou faça antes um fork e clone do seu repositório)
+$ git clone https://github.com/heroku/node-js-getting-started.git #só execute clone novamente, se vc ainda não fez clone do projeto
 $ cd node-js-getting-started
 $ npm install
 $ npm start
@@ -48,8 +48,10 @@ Pronto. Sua aplicação deve executar em [localhost:5000](http://localhost:5000/
 ----
 
 ## Deploying no Heroku
+###### Obs. Heroku CLI não possui versão oficial para o Termux
 
-Você precisa ter o Heroku CLI que vai ajudar a gerenciar e dimensionar seus aplicativos, provisionar complementos, visualizar seus logs de aplicativo e executar seu aplicativo localmente. 
+Agora você pode fazer deploy da suaplicação no Heroku.
+Antes, você precisa ter o Heroku CLI que vai ajudar a gerenciar e dimensionar seus aplicativos, provisionar complementos, visualizar seus logs de aplicativo e executar seu aplicativo localmente. 
 
 ```sh
 $ sudo snap install heroku --classic 
