@@ -4,7 +4,7 @@ Clássico jogo da cobrinha (bem simples) em JavaScript.
 
 
 ## Rodando localmente 1
-Por ser feito em Javascript, você pode rodar o jogo abrindo o arquivo [_views/pages/jogo.html_](views/pages/jogo.html) com o seu navegador.
+Você pode rodar o jogo abrindo o arquivo [_views/pages/jogo.html_](views/pages/jogo.html) com o seu navegador.
 
 ```sh
 $ git clone https://github.com/ifal-riolargo/snake-game-js.git # ou clone do seu próprio fork
