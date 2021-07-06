@@ -61,9 +61,9 @@ $ sudo snap install heroku --classic
 
 ```sh
 $ heroku login # isso deve abrir o navegador e pedir para você entrar com seu login e senha no Heroku
-$ heroku create
-$ git push heroku main
-$ heroku open
+$ heroku create #cria um repo remoto em heroku.com e aponta o seu repo local para lá 
+$ git push heroku main #envia sua aplicação para o heroku
+$ heroku open #abre o navegador na sua aplicação, executando em um servidor na nuvem
 ```
 
 Pronto. Você verá sua aplicação executando em um servidor na nuvem. Basta copiar o link do navegador e você poderá mostrar sua aplicação para seus amigos.
