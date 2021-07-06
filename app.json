@@ -1,0 +1,8 @@
+{
+  "name": "snake-game-js",
+  "description": "A classical Snake Game. With support of Node.js and Express 4",
+  "repository": "https://github.com/ifal-riolargo/snake-game-js",
+  "logo": "https://github.com/ifal-riolargo/snake-game-js/blob/main/sprite-snake.jpg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
