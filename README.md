@@ -3,7 +3,7 @@ Clássico jogo da cobrinha (bem simples) em JavaScript.
 <img src="sprite-snake.jpg" alt="drawing" width="50"/>
 
 
-## Rodando localmente 1
+## Rodando localmente 1 (apenas no computador)
 Você pode rodar o jogo abrindo o arquivo [_views/pages/jogo.html_](views/pages/jogo.html) com o seu navegador.
 
 ```sh
