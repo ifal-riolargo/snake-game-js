@@ -37,7 +37,7 @@ Agora execute.
 $ node --version # verificar versão do node
 $ npm --version # verificar versão do NPM
 $ git --version # verificar versão do GIT
-$ git clone https://github.com/heroku/node-js-getting-started.git #só execute clone novamente, se vc ainda não fez clone do projeto
+$ git clone https://github.com/ifal-riolargo/snake-game-js.git #só execute clone novamente, se vc ainda não fez clone do projeto
 $ cd node-js-getting-started
 $ npm install
 $ npm start
