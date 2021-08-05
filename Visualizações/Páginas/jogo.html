@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body onKeyDown="pegadirecao(event.keyCode);">
-    <form action="">
-    <button type="menu"> RESET </button>
-    </form>
+   
     <style>
         body{
             background-color: green;
@@ -11,14 +9,24 @@
         button{
             background-color: yellow;
         }
+        input{
+            background-color: blue;
+        }
+
     </style>
 
 <h1 align="center"> JOGO DA COBRINHA </h1>
+<form action="">
+    <button type="menu">REINICIAR <br> JOGO</button> <!--PARA SER RETIRADO-->
+    </form>
+    <input type="button" value="-" onclick="diminuir()" id="menos"> <!--botao  para diminuir velocidade-->
+    <input type="button" name="veloz_" value="NÍVEL" > <!--botao reiniciar-->
+    <input type="button" name="veloz+" value="+" onclick="aumentar()" > <!--botao para aumentar velocidade-->
+
 <h2 align="center">JARDSON SANTOS</h2>
 
 <div id=principal></div>
 <script>
-
     tabuleiro="<table align=center border=1>";
     for(x=0;x<13;x++){
         tabuleiro+="<tr>";
@@ -27,12 +35,13 @@
         tabuleiro+="</tr>";
     }
     document.getElementById('principal').innerHTML=tabuleiro+"</table>";
-    cobra=[[6,0]];
+    cobra=[[6,0]]; 
     direcao=2;
-    mx=parseInt(Math.random()*13);
-    my=parseInt(Math.random()*13);
+    mx=parseInt(Math.random()*13); //POSIÇÃO DA MAÇÃ
+    my=parseInt(Math.random()*13); //posição da maçã
     vivo=true;
-    function anda(){
+    var vel = 300
+    function anda(){    //ANDAR
         document.getElementById('td'+cobra[cobra.length-1][0]+'_'+cobra[cobra.length-1][1]).style.background="000000";
         if(mx==cobra[cobra.length-1][0]&&my==cobra[cobra.length-1][1]){
             mx=parseInt(Math.random()*13);
@@ -43,6 +52,36 @@
             cobra[x][0]=cobra[x-1][0];
             cobra[x][1]=cobra[x-1][1];
         }
+        if(direcao==0)cobra[0][1]--;
+        if(direcao==1)cobra[0][0]--;
+        if(direcao==2)cobra[0][1]++;
+        if(direcao==3)cobra[0][0]++;
+        for(x=1;x<cobra.length;x++)if(cobra[0][0]==cobra[x][0]&&cobra[0][1]==cobra[x][1])vivo=false;
+        if(cobra[0][0]<0||cobra[0][1]<0||cobra[0][0]>13||cobra[0][1]>13)vivo=false;
+        document.getElementById('td'+cobra[0][0]+'_'+cobra[0][1]).style.background="#000000";
+        document.getElementById('td'+mx+'_'+my).style.background="#ff3333";
+        if(vivo)setTimeout('anda()',vel);
+        else alert('Fim de jogo');
+    }
+    anda();
+    function pegadirecao(tecla){
+        /*alert(tecla);*/
+        if(tecla==37)direcao=0;
+        if(tecla==38)direcao=1;
+        if(tecla==39)direcao=2;
+        if(tecla==40)direcao=3;
+    }
+    function diminuir(){
+        vel = vel + 50        
+    }
+    function aumentar(){
+        vel = vel - 50
+    }
+    
+    
+</script>
+</body>
+</html>
         if(direcao==0)cobra[0][1]--;
         if(direcao==1)cobra[0][0]--;
         if(direcao==2)cobra[0][1]++;
