@@ -24,7 +24,7 @@ Para quem for usar o Termux, instale com o comando abaixo.
 $ pkg install nodejs
 ```
 
-Para quem usa Ubuntu, use os comandos abaixo.
+Para quem usa Ubuntu (ou WSL/Ubuntu no Windows), use os comandos abaixo.
 ```sh 
 $ sudo apt update
 $ sudo apt install nodejs
@@ -37,13 +37,13 @@ Agora execute.
 $ node --version # verificar versão do node
 $ npm --version # verificar versão do NPM
 $ git --version # verificar versão do GIT
-$ git clone https://github.com/ifal-riolargo/snake-game-js.git #só execute clone novamente, se vc ainda não fez clone do projeto
+$ git clone https://github.com/<SEU USUARIO>/snake-game-js.git #fazer clone do projeto (no seu fork)
 $ cd node-js-getting-started
 $ npm install
 $ npm start
 ```
 
-Pronto. Sua aplicação deve executar em [localhost:5000](http://localhost:5000/).
+Pronto. Abra o navegador e digite [http://localhost:5000/](http://localhost:5000/).
 
 ----
 
