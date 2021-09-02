@@ -3,7 +3,7 @@ Clássico jogo da cobrinha (bem simples) em JavaScript.
 <img src="sprite-snake.jpg" alt="drawing" width="50"/>
 
 
-## Rodando localmente 1 (apenas para alunos usando o computador)
+<!-- ## Rodando localmente 1 (apenas para alunos usando o computador)
 Você pode rodar o jogo abrindo o arquivo [_views/pages/jogo.html_](views/pages/jogo.html) com o seu navegador.
 
 ```sh
@@ -12,9 +12,9 @@ $ cd snake-game-js
 $ firefox views/pages/jogo.html # ou use outro navegador ex. google-chrome 
 ```
 
-----
+---- -->
 
-## Rodando localmente 2
+## Rodando localmente 
 O jogo usa a infraestrutura do Node.js para publicação no Heroku. Por este motivo, você pode rodar um servidor localmente e executar o jogo.
 
 Antes, você precisa ter o [Node.js](http://nodejs.org/) e o [NPM](https://www.npmjs.com/) instalados.
