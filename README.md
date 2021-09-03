@@ -38,7 +38,7 @@ $ node --version # verificar versão do node
 $ npm --version # verificar versão do NPM
 $ git --version # verificar versão do GIT
 $ git clone https://github.com/<SEU USUARIO>/snake-game-js.git #fazer clone do projeto (no seu fork)
-$ cd node-js-getting-started
+$ cd snake-game-js
 $ npm install
 $ npm start
 ```
